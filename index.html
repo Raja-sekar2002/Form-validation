@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title> form validation </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <!-- <h1 class="hel">hello developer</h1>
+        <button onclick="join()">Add class</button>
+        <button onclick="erase()">Remove class</button> -->
+
+        <div class="container">
+            <form id="form">
+                <div class="title">Get Started</div>
+
+                <div>
+                  <label for="username">User Name</label>
+                  <i class="fas fa-user"></i>
+
+                  <input type="text" name="username" id="username" placeholder="arun"/>
+                  <i class="fas fa-exclamation-circle failure-icon"></i>  
+                  <i class="fas fa-check-circle success-icon"></i>   
+
+                  <div class="error"></div> 
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <i class="fas fa-envelope"></i>
+  
+                    <input type="email" name="email" id="email" placeholder="abc@gamil.com"/>
+                    <i class="fas fa-exclamation-circle failure-icon"></i>  
+                    <i class="fas fa-check-circle success-icon"></i>                    
+                  
+                    <div class="error"></div> 
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <i class="fas fa-lock"></i>
+  
+                    <input type="password" name="password" id="password" placeholder="password here"/>
+                    <i class="fas fa-exclamation-circle failure-icon"></i>  
+                    <i class="fas fa-check-circle success-icon"></i>                    
+                  
+                    <div class="error"></div> 
+                </div>               
+                <button id="btn" type="submit">Submit</button>
+            </form>
+    
+        </div>
+        <script src="./index.js"></script>
+
+    </body>
+</html>
